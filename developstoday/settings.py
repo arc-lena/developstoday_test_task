@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import django_heroku
 from pathlib import Path
 from celery.schedules import crontab
 
@@ -122,6 +123,9 @@ CELERY_BEAT_SCHEDULE = {
         "schedule": crontab(minute=0, hour=0),
     }
 }
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
