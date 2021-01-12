@@ -11,7 +11,15 @@ Deployment link: [https://rocky-spire-00690.herokuapp.com/](https://rocky-spire-
 Postman collection link:  [https://documenter.getpostman.com/view/12674086/TVzSiGeW](https://documenter.getpostman.com/view/12674086/TVzSiGeW)
 
 Code formatted with black.
-Flake8 ...
+
+Flake8:
+- news\tests.py:1:1: F401 'django.test.TestCase' imported but unused
+- news\migrations\0001_initial.py:66:80: E501 line too long (83 > 79 characters)
+- developstoday\settings.py:101:80: E501 line too long (91 > 79 characters)
+- developstoday\settings.py:104:80: E501 line too long (81 > 79 characters)
+- developstoday\settings.py:110:80: E501 line too long (83 > 79 characters)
+
+They are default, created with django project.
 
 ### _api/docs/_ : url for swagger
 
